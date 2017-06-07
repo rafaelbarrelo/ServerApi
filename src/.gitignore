@@ -1,6 +1,7 @@
 .vscode/
 bin/
 obj/
+app/
 *.dll
 *.exe
 *.user
