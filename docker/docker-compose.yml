@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  core-app1:
+    build: 
+      context: ./app
+      dockerfile: app1.yml
+    ports:
+        - "8080:8080"
+
+  core-app2:
+    build: 
+      context: ./app
+      dockerfile: app2.yml
+    ports:
+        - "8081:8081"
+
+  nginx:
+    build: ./nginx
+    container_name: core-app.local
+    ports:
+      - "80:80"
+    links:
+      - core-app1
+      - core-app2
