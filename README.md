@@ -38,4 +38,4 @@ $ docker-compose up -d
 
 Look you are accessing by port 80 (nginx) but your request is directed to each container app.
 
-If you whant to clean all containers, run __"clean_docker.sh"__
+If you want to clean all containers, run __"clean_docker.sh"__
