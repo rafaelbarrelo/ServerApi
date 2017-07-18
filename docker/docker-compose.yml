@@ -4,18 +4,14 @@ services:
   core-app1:
     hostname: core-app1
     build: 
-      context: ./app
-      dockerfile: app1.yml
-    #ports:
-    #    - "8080:8080"
+      context: .
+      dockerfile: Dockerfile
 
   core-app2:
     hostname: core-app2
     build: 
-      context: ./app
-      dockerfile: app1.yml
-    #ports:
-    #    - "8081:8081"
+      context: .
+      dockerfile: Dockerfile
 
   nginx:
     hostname: nginx
